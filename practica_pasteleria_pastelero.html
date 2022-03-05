@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pasteleria</title>
+</head>
+<body>
+    <h1><i><center>Pastelería "La constelación"</center></i></h1>
+    <h3><center>La delicia de otro planeta.</center></h3><br>
+    <hr>
+    <h2><center>sabores restantes de pasteles </center></h2>
+    <ul>
+    <li>Moka</li>
+        <li>Durazno</li>
+        <li>Fresa</li>
+        <li>Cafe</li>
+        <li>Oreo</li>
+        <li>Cajeta</li>
+        <li>Nuez</li>
+    </ul>
+<hr>
+    <ul>
+    <h2><center>adornos restantes de pasteles </center></h2>
+    <li>Fondan</li>
+    <li>Crema chantilly</li>
+    <li>Adorno floral de azucar</li>
+    <li>Adorno floral natural</li>
+    <li>Adorno de chocolate</li>
+</ul>
+<hr>
+<script language="javascript">
+    function mostrar()
+    {
+        var reg_1=document.getElementById("reg_1");
+        var reg_2=document.getElementById("reg_2");
+        var reg_3=document.getElementById("reg_3");
+        var reg_4=document.getElementById("reg_4");
+        var reg_5=document.getElementById("reg_5");
+        var reg_6=document.getElementById("reg_6");
+        var reg_7=document.getElementById("reg_7");
+        var reg_8=document.getElementById("reg_8");
+        var reg_9=document.getElementById("reg_9");
+        var reg_10=document.getElementById("reg_10");
+        var reg_11=document.getElementById("reg_11");
+        var reg_12=document.getElementById("reg_12");
+    
+        document.write(
+        "<table cellpadding='5' cellspacing='4' border='3'>" +
+        "<tr><td>kilos de pastel</td><td>sabores</td><td>adornos de pastel</td><td>color del pastel</td><td>imagen del pastel</td><td>descripcion del pedido</td><td>nombre</td><td>apellido</td><td>direccion</td><td>telefono</td><td>fecha de evento</td><td>correo electronico</td></tr>"+
+        "<tr><td>"+reg_1.value+"</td><td>"+reg_2.value+"</td><td>"+reg_3.value+"</td><td>"+reg_4.value+"</td><td>"+reg_5.value+"</td><td>"+reg_6.value+"</td><td>"+reg_7.value+"</td><td>"+reg_8.value+"</td><td>"+reg_9.value+"</td><td>"+reg_10.value+"</td><td>"+reg_11.value+"</td><td>"+reg_12.value+"</td></tr></table>"
+        );
+    }
+    </script>
+    <h2><center>datos del formulario</center></h2>
+    <form>
+    <center>kilos de pastel:</center>
+    <center><input type="text" id="reg_1"/><br><br></center>
+    <center>sabores:</center>
+    <center><input type="text" id="reg_2"/><br /><br /></center>
+    <center>adornos de pastel:</center>
+    <center><input type="text" id="reg_3"/><br><br /></center>
+    <center>color de pastel: </center>
+    <center><input type="text" id="reg_4"/><br><br /></center>
+    <center>imagen del pastel:</center> 
+    <center><input type="text" id="reg_5"/><br /><br /></center>
+    <center>descripcion general del pastel: </center>
+    <center><input type="text" id="reg_6"/><br><br /></center>
+    <center>Nombre:</center>
+    <center><input type="text" id="reg_7"/><br><br /></center>
+    <center>Apellido:</center>
+    <center><input type="text" id="reg_8"/><br><br /></center>
+    <center>Direccion:</center>
+    <center><input type="text" id="reg_9"/><br /><br /></center>
+    <center>telefono:</center> 
+    <center><input type="text" id="reg_10"/><br><br /></center>
+    <center>fecha de evento:</center>
+    <center><input type="text" id="reg_11"/><br /><br /></center>
+    <center>correo electronico: </center>
+    <center><input type="text" id="reg_12"/><br><br /></center>
+    <center><input type="button" onclick="mostrar()" value="mostrar tabla de pedidos"/></center>
+
+    </form>
+
+</body>
+</html>
