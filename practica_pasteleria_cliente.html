@@ -31,6 +31,7 @@
     <label for="cajeta">Cajeta.....................$20</label><br><br>
     <label for="box1">¿cuantas rebanadas quiere?</label>
     <input type="number" id="box1" name="box1" value="rebanada"><br><br>
+
     <h2><center>Datos del cliente</center></h2>
 <label action="/accion.js" id="form1" method="post">
     <label for="nombre">Nombre:</label>
@@ -79,35 +80,66 @@
     <input type="checkbox" id="adorno4" name="adorno4" value="fresa">
     <label for="adorno4">Adorno floral natural........$220</label><br>
     <input type="checkbox" id="adorno5" name="adorno5" value="nuez">
-    <label for="adorno5">Adornos de chocolate.......$110</label><br><br>
-
-
+    <label for="adorno5">Adornos de chocolate.......$110</label>
+    <br><br>
     <label for="box1">¿cuantos kilos de pastel quiere?</label>
     <input type="number" id="box1" name="box1" value="rebanada"><br>
     
     <h2><center>Datos del cliente</center></h2>
-<label action="/accion.js" id="form1" method="post">
-    <label for="nombre">color del decorado del pastel:</label>
-    <input type="color"></label><br><br>
-    <label for="nombre">cargue la imagen del modelo del pastel:</label>
-    <input type="file" id="archivo0" name="archivo0" multiple><br><br>
-    <p>descripcion del pedido: <textarea name="comentario"></textarea></p><br>
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre"><br><br>
-    <label for="apellido">Apellido:</label>
-    <input type="text" id="apellido" name="apellido" form="form1"><br><br>
-    <label for="direccion">Direccion:</label>
-    <input type="text" id="direccion" name="direccion"><br><br>
-    <label for="tel1">Teléfono:</label>
-    <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
-    <label for="fecha">Fecha del evento:</label>
-    <input type="datetime-local" id="fecha2" name="fecha2"><br><br>
-    <label for="correo1">Correo elctronico:</label>
-    <input type="email" id="correo1" name="correo1"><br><br>
-    <input type="reset">
-</form>
+    <script language="javascript">
+        function mostrar()
+        {
+            var reg_1=document.getElementById("reg_1");
+            var reg_2=document.getElementById("reg_2");
+            var reg_3=document.getElementById("reg_3");
+            var reg_4=document.getElementById("reg_4");
+            var reg_5=document.getElementById("reg_5");
+            var reg_6=document.getElementById("reg_6");
+            var reg_7=document.getElementById("reg_7");
+            var reg_8=document.getElementById("reg_8");
+            var reg_9=document.getElementById("reg_9");
+            var reg_10=document.getElementById("reg_10");
+            var reg_11=document.getElementById("reg_11");
+            var reg_12=document.getElementById("reg_12");
+        
+            document.write(
+            "<table cellpadding='5' cellspacing='4' border='3'>" +
+            "<tr><td>kilos de pastel</td><td>sabores</td><td>adornos de pastel</td><td>color del pastel</td><td>imagen del pastel</td><td>descripcion del pedido</td><td>nombre</td><td>apellido</td><td>direccion</td><td>telefono</td><td>fecha de evento</td><td>correo electronico</td></tr>"+
+            "<tr><td>"+reg_1.value+"</td><td>"+reg_2.value+"</td><td>"+reg_3.value+"</td><td>"+reg_4.value+"</td><td>"+reg_5.value+"</td><td>"+reg_6.value+"</td><td>"+reg_7.value+"</td><td>"+reg_8.value+"</td><td>"+reg_9.value+"</td><td>"+reg_10.value+"</td><td>"+reg_11.value+"</td><td>"+reg_12.value+"</td></tr></table>"
+            );
+        }
+        </script>
+        <h2><center>datos del formulario</center></h2>
+        <form>
+        <center>kilos de pastel:</center>
+        <center><input type="text" id="reg_1"/><br><br></center>
+        <center>sabores:</center>
+        <center><input type="text" id="reg_2"/><br /><br /></center>
+        <center>adornos de pastel:</center>
+        <center><input type="text" id="reg_3"/><br><br /></center>
+        <center>color de pastel: </center>
+        <center><input type="color" id="reg_4"></label><br><br></center>
+        <center>imagen del modelo del pastel:</center> <br>
+        <center><input type="file" id="reg_5" name="archivo0" multiple><br><br></center>
+        <center>descripcion general del pastel: </center>
+        <center> <p> <textarea id="reg_6"></textarea></p><br></center>
+        <center>Nombre:</center>
+        <center><input type="text" id="reg_7"/><br><br /></center>
+        <center>Apellido:</center>
+        <center><input type="text" id="reg_8"/><br><br /></center>
+        <center>Direccion:</center>
+        <center><input type="text" id="reg_9"/><br /><br /></center>
+        <center>telefono:</center> 
+        <center><input type="text" id="reg_10"/><br><br /></center>
+        <center>fecha de evento:</center>
+        <center><input type="text" id="reg_11"/><br /><br /></center>
+        <center>correo electronico: </center>
+        <center><input type="text" id="reg_12"/><br><br /></center>
+        <center><input type="button" onclick="mostrar()" value="mostrar tabla de pedidos"/></center>
+    
+        </form><br>
 
-    <input type="button" id="boton1" name="boton1" value="pagar y enviar"
-    onclick="alert('gracias por tu compra, el pedido esta en preparacion.');"><br><br>
+        <center><input type="button" id="boton1" name="boton1" value="pagar y enviar"
+    onclick="alert('gracias por tu compra, el pedido esta en preparacion.');"><br><br></center>
     </body>
 </html>
