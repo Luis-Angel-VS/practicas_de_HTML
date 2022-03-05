@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pasteleria</title>
+    
+</head>
+<body>
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7528.420023017657!2d-98.9794110842998!3d19.360057180661396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xae9b311fee2d3ad6!2sPasteleria%20%22LOS%20REYES%22!5e0!3m2!1ses-419!2smx!4v1646475217944!5m2!1ses-419!2smx" width="638" height="150" style="border:1;" allowfullscreen="" loading="lazy"></iframe>
+    <h1><i><center>Pastelería "La constelación"</center></i></h1>
+    <h3><center>La delicia de otro planeta.</center></h3><br>
+    <hr>
+    <h2><center>sabores de rebanadas de pastel </center></h2><br>
+
+    <input type="radio" id="moka" name="sabores" value="moka">
+    <label for="moka">Moka.....................$20</label><br>
+    <input type="radio" id="cafe" name="sabores" value="cafe">
+    <label for="cafe">Cafe.......................$20</label><br>
+    <input type="radio" id="durazno" name="sabores" value="durazno">
+    <label for="durazno">Durazno.................$20</label><br>
+    <input type="radio" id="fresa" name="sabores" value="fresa">
+    <label for="fresa">Fresa......................$20</label><br>
+    <input type="radio" id="nuez" name="sabores" value="nuez">
+    <label for="nuez">Nuez......................$20</label><br>
+    <input type="radio" id="oreo" name="sabores" value="oreo">
+    <label for="oreo">Oreo.......................$20</label><br>
+    <input type="radio" id="cajeta" name="sabores" value="cajeta">
+    <label for="cajeta">Cajeta.....................$20</label><br><br>
+    <label for="box1">¿cuantas rebanadas quiere?</label>
+    <input type="number" id="box1" name="box1" value="rebanada"><br><br>
+    <h2><center>Datos del cliente</center></h2>
+<label action="/accion.js" id="form1" method="post">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre"><br><br>
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" form="form1"><br><br>
+    <label for="direccion">Direccion:</label>
+    <input type="text" id="direccion" name="direccion"><br><br>
+    <label for="tel1">Teléfono:</label>
+    <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
+    <label for="fecha">Fecha del evento:</label>
+    <input type="datetime-local" id="fecha2" name="fecha2"><br><br>
+    <label for="correo1">Correo elctronico:</label>
+    <input type="email" id="correo1" name="correo1"><br><br>
+    <input type="reset">
+    <input type="button" id="boton1" name="boton1" value="pagar y enviar" 
+    onclick="alert('gracias por tu compra, ya se esta enviando tu rebanada.');"><br><br>
+
+    <hr>
+    <h2><center>sabores de pastel para pedidos</center></h2>
+    <h3><center>(puede combinar sabores)</center></h3>
+    <h3><center>El kilo de pastel se encuentra en $77</center></h3>
+    <br>
+    <br>
+    <input type="checkbox" id="topping1" name="topping1" value="moka">
+    <label for="topping1">sabor Moka</label><br>
+    <input type="checkbox" id="topping2" name="topping2" value="cafe">
+    <label for="topping2">sabor Cafe</label><br>
+    <input type="checkbox" id="topping3" name="topping3" value="durazno">
+    <label for="topping3">sabor Durazno</label><br>
+    <input type="checkbox" id="topping4" name="topping4" value="fresa">
+    <label for="topping4">sabor Fresa</label><br>
+    <input type="checkbox" id="topping5" name="topping5" value="nuez">
+    <label for="topping5">sabor Nuez</label><br>
+    <input type="checkbox" id="topping6" name="topping6" value="oreo">
+    <label for="topping6">sabor Oreo</label><br>
+    <input type="checkbox" id="topping7" name="topping7" value="cajeta">
+    <label for="topping7">sabor Cajeta</label><br><br>
+    <label for="refresco">Eliga el tipo de adorno para su pastel:</label><br><br>
+    <input type="checkbox" id="adorno1" name="adorno1" value="fondan">
+    <label for="adorno1">Fondan............................$70</label><br>
+    <input type="checkbox" id="adorno2" name="adorno2" value="crema chantilly">
+    <label for="adorno2">Crema chantilly................$50</label><br>
+    <input type="checkbox" id="adorno3" name="adorno3" value="durazno">
+    <label for="adorno3">Adorno floral de azucar....$160</label><br>
+    <input type="checkbox" id="adorno4" name="adorno4" value="fresa">
+    <label for="adorno4">Adorno floral natural........$220</label><br>
+    <input type="checkbox" id="adorno5" name="adorno5" value="nuez">
+    <label for="adorno5">Adornos de chocolate.......$110</label><br><br>
+
+
+    <label for="box1">¿cuantos kilos de pastel quiere?</label>
+    <input type="number" id="box1" name="box1" value="rebanada"><br>
+    
+    <h2><center>Datos del cliente</center></h2>
+<label action="/accion.js" id="form1" method="post">
+    <label for="nombre">color del decorado del pastel:</label>
+    <input type="color"></label><br><br>
+    <label for="nombre">cargue la imagen del modelo del pastel:</label>
+    <input type="file" id="archivo0" name="archivo0" multiple><br><br>
+    <p>descripcion del pedido: <textarea name="comentario"></textarea></p><br>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre"><br><br>
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" form="form1"><br><br>
+    <label for="direccion">Direccion:</label>
+    <input type="text" id="direccion" name="direccion"><br><br>
+    <label for="tel1">Teléfono:</label>
+    <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
+    <label for="fecha">Fecha del evento:</label>
+    <input type="datetime-local" id="fecha2" name="fecha2"><br><br>
+    <label for="correo1">Correo elctronico:</label>
+    <input type="email" id="correo1" name="correo1"><br><br>
+    <input type="reset">
+</form>
+
+    <input type="button" id="boton1" name="boton1" value="pagar y enviar"
+    onclick="alert('gracias por tu compra, el pedido esta en preparacion.');"><br><br>
+    </body>
+</html>
